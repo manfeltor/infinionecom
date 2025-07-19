@@ -16,6 +16,7 @@ env/
 venv/
 ENV/
 .venv/
+infinionenv/
 
 # System files
 .DS_Store
@@ -59,3 +60,5 @@ build/
 dist/
 *.egg-info/
 .eggs/
+
+# env
