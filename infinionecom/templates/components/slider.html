@@ -1,0 +1,41 @@
+{% load static %}
+
+<!-- Slider -->
+    <section id="product-slider">
+        <div class="main-slider swiper-container">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <img src="{% static 'assets/images/main-slider/carrousel1.png' %}" alt="Reparación de celulares">
+              <div class="swiper-slide-content">
+                <h2 class="text-3xl md:text-7xl font-bold text-white mb-2 md:mb-4">Repará tu celular como nuevo</h2>
+                <p class="mb-4 text-white md:text-2xl">Cambio de batería, módulos y más. Servicio técnico con garantía.</p>
+                <a href="/" class="bg-black hover:bg-transparent text-white hover:text-white border border-transparent hover:border-white font-semibold px-4 py-2 rounded-full inline-block">Solicitar turno</a>
+              </div>
+            </div>
+      
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <img src="{% static 'assets/images/main-slider/carrousel2.png' %}" alt="Accesorios tecnológicos">
+              <div class="swiper-slide-content">
+                <h2 class="text-3xl md:text-7xl font-bold text-black mb-2 md:mb-4">Accesorios top</h2>
+                <p class="mb-4 text-black md:text-2xl">Tecnología para tu celular o PC — cables, cargadores, auriculares, y más.</p>
+                <a href="/" class="bg-black hover:bg-transparent text-white hover:text-white font-semibold px-4 py-2 rounded-full inline-block border border-transparent hover:border-white">Ver accesorios</a>
+              </div>
+            </div>
+      
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <img src="{% static 'assets/images/main-slider/carrousel3.png' %}" alt="Servicio técnico">
+              <div class="swiper-slide-content">
+                <h2 class="text-3xl md:text-7xl font-bold text-white mb-2 md:mb-4">Taller especializado</h2>
+                <p class="mb-4 text-white md:text-2xl">Diagnóstico y reparación electrónica con técnicos certificados.</p>
+                <a href="/" class="bg-white hover:bg-transparent text-black hover:text-white border border-transparent hover:border-white font-semibold px-4 py-2 rounded-full inline-block">Conocé más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slider Pagination -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </section>

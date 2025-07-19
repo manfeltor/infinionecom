@@ -1,0 +1,50 @@
+{% load static %}
+
+<!-- Brand section -->
+    <section id="brands" class="bg-white py-16 px-4">
+        <div class="container mx-auto max-w-screen-xl px-4 testimonials">
+          <div class="text-center mb-12 lg:mb-20">
+            <h2 class="text-5xl font-bold mb-4">Descubre <span class="text-primary">Nuestras Marcas</span></h2>
+            <p class="my-7">Explora las marcas tope de gama en nuestra tienda</p>
+        </div>
+            <div class="swiper brands-swiper-slider">
+                <div class="swiper-wrapper">
+                    <!-- Brand Logo 1 -->
+                    <div class="swiper-slide flex-none bg-gray-200 flex items-center justify-center rounded-md">
+                        <img src="{% static '/assets/images/brands/html.svg' %}" alt="Client Logo" class="max-h-full max-w-full">
+                    </div>
+
+                    <!-- Brand Logo 2 -->
+                    <div class="swiper-slide flex-none bg-gray-200 flex items-center justify-center rounded-md">
+                        <img src="{% static '/assets/images/brands/js.svg' %}" alt="Client Logo" class="max-h-full max-w-full">
+                    </div>
+
+                    <!-- Brand Logo 3 -->
+                    <div class="swiper-slide flex-none bg-gray-200 flex items-center justify-center rounded-md">
+                        <img src="{% static '/assets/images/brands/laravel.svg' %}" alt="Client Logo" class="max-h-full max-w-full">
+                    </div>
+
+                    <!-- Brand Logo 4 -->
+                    <div class="swiper-slide flex-none bg-gray-200 flex items-center justify-center rounded-md">
+                        <img src="{% static '/assets/images/brands/php.svg' %}" alt="Client Logo" class="max-h-full max-w-full">
+                    </div>
+
+                    <!-- Brand Logo 5 -->
+                    <div class="swiper-slide flex-none bg-gray-200 flex items-center justify-center rounded-md">
+                        <img src="{% static '/assets/images/brands/react.svg' %}" alt="Client Logo" class="max-h-full max-w-full">
+                    </div>
+
+                    <!-- Brand Logo 6 -->
+                    <div class="swiper-slide flex-none bg-gray-200 flex items-center justify-center rounded-md">
+                        <img src="{% static '/assets/images/brands/tailwind.svg' %}" alt="Client Logo" class="max-h-full max-w-full">
+                    </div>
+
+                    <!-- Brand Logo 7 -->
+                    <div class="swiper-slide flex-none bg-gray-200 flex items-center justify-center rounded-md">
+                      <img src="{% static '/assets/images/brands/typescript.svg' %}" alt="Client Logo" class="max-h-full max-w-full">
+                    </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+    </section>

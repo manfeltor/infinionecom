@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>📦 Products</h1>
+
+    <a href="{% url 'admin_product_create' %}">➕ Add New Product</a>
+
+    {% if products %}
+        <table border="1" cellpadding="8" cellspacing="0">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Brand</th>
+                    <th>Price</th>
+                    <th>Discount</th>
+                    <th>Final Price</th>
+                    <th>Featured</th>
+                    <th>Active</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for product in products %}
+                <tr>
+                    <td>{{ product.id }}</td>
+                    <td>
+                        {% if product.image %}
+                            <img src="{{ product.image.url }}" alt="{{ product.name }}" width="50">
+                        {% else %}
+                            ❌
+                        {% endif %}
+                    </td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.category.name }}</td>
+                    <td>{{ product.brand.name }}</td>
+                    <td>${{ product.price }}</td>
+                    <td>{% if product.discount %}{{ product.discount_percentage }}%{% else %}-{% endif %}</td>
+                    <td>${{ product.final_price|floatformat:2 }}</td>
+                    <td>{{ product.is_featured }}</td>
+                    <td>{{ product.is_active }}</td>
+                    <td>
+                        <a href="{% url 'admin_product_edit' product.pk %}">✏️</a>
+                        <a href="{% url 'admin_product_delete' product.pk %}">🗑️</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No products yet.</p>
+    {% endif %}
+
+    <br><a href="{% url 'admin_dashboard' %}">⬅ Back to Dashboard</a>
+{% endblock %}

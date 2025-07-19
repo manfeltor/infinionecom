@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>{% if form.instance.pk %}✏️ Edit{% else %}➕ Add{% endif %} Product</h1>
+
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}
+        </table>
+        <button type="submit">💾 Save</button>
+        <a href="{% url 'admin_product_list' %}">Cancel</a>
+    </form>
+{% endblock %}

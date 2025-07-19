@@ -1,0 +1,20 @@
+{% load static %}
+<!doctype html>
+<html>
+  <head>
+    {% include "components/head.html" %}
+    <!-- {% include "components/head_style_fade.html" %} -->
+  </head>
+  <body>
+    <!-- {% include "components/splash.html" %} -->
+    {% include "components/header.html" %}
+    {% include "components/mobile_menu.html" %}
+
+    {% block content %}
+    <!-- Page-specific content goes here -->
+    {% endblock %}
+
+    {% include "components/footer.html" %}
+    <!-- {% include "components/scripts.html" %} -->
+  </body>
+</html>

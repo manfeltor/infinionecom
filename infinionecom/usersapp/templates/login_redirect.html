@@ -1,0 +1,10 @@
+{% if form.errors %}
+<script>
+  alert("Usuario y/o contraseña inválidos.");
+  window.location.href = "/";
+</script>
+{% else %}
+<script>
+  window.location.href = "/";
+</script>
+{% endif %}

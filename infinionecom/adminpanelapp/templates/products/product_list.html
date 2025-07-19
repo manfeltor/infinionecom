@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<body>
+    <h1>🗑️ Confirm Deletion</h1>
+
+    <p>Are you sure you want to delete the product <strong>{{ product.name }}</strong>?</p>
+
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit">❌ Yes, Delete</button>
+        <a href="{% url 'admin_product_list' %}">Cancel</a>
+    </form>
+</body>
+{% endblock %}

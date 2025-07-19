@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Infinion Admin Dashboard</h1>
+    
+<ul>
+    <li>
+        <a href="{% url 'admin_product_list' %}">📦 Manage Products</a>
+    </li>
+    <li>
+        <a href="#">📂 Manage Categories (TODO)</a>
+    </li>
+    <li>
+        <a href="#">🏷️ Manage Brands (TODO)</a>
+    </li>
+    <li>
+        <a href="#">📊 View Sales Analytics (Later)</a>
+    </li>
+    <li>
+        <a href="#">⚙️ Settings (Later)</a>
+    </li>
+</ul>
+
+<hr>
+<p>Logged in as: {{ request.user.username }}</p>
+{% endblock %}

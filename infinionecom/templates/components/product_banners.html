@@ -1,0 +1,44 @@
+{% load static %}
+
+<!-- Product banner section -->
+    <section id="product-banners">
+        <div class="container mx-auto py-10">
+          <div class="flex flex-wrap -mx-4">
+            <!-- Category 1 -->
+            <div class="w-full sm:w-1/3 px-4 mb-8">
+              <div class="category-banner relative overflow-hidden rounded-lg shadow-lg group">
+                <img src="{% static '/assets/images/cat1.png' %}" alt="Celulares y smartphones" class="w-full h-auto">
+                <div class="absolute inset-0 bg-gray-light bg-opacity-50"></div>
+                <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4">
+                  <h2 class="text-2xl md:text-3xl font-bold mb-4">Celulares</h2>
+                  <a href="/" class="bg-primary hover:bg-transparent border border-transparent hover:border-white text-white hover:text-white font-semibold px-4 py-2 rounded-full inline-block">Ver celulares</a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Category 2 -->
+            <div class="w-full sm:w-1/3 px-4 mb-8">
+              <div class="category-banner relative overflow-hidden rounded-lg shadow-lg group">
+                <img src="{% static '/assets/images/cat2.png' %}" alt="Accesorios para móviles" class="w-full h-auto">
+                <div class="absolute inset-0 bg-gray-light bg-opacity-50"></div>
+                <div class="category-text absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 transition duration-300">
+                  <h2 class="text-2xl md:text-3xl font-bold mb-4">Accesorios</h2>
+                  <a href="/" class="bg-primary hover:bg-transparent border border-transparent hover:border-white text-white hover:text-white font-semibold px-4 py-2 rounded-full inline-block">Ver accesorios</a>
+                </div>
+              </div>
+            </div>
+    
+            <!-- Category 3 -->
+            <div class="w-full sm:w-1/3 px-4 mb-8">
+              <div class="category-banner relative overflow-hidden rounded-lg shadow-lg group">
+                <img src="{% static '/assets/images/cat3.png' %}" alt="Reparación técnica" class="w-full h-auto">
+                <div class="absolute inset-0 bg-gray-light bg-opacity-50"></div>
+                <div class="category-text absolute inset-0 flex flex-col items-center justify-center text-center text-white p-4 transition duration-300">
+                  <h2 class="text-2xl md:text-3xl font-bold mb-4">Servicio Técnico</h2>
+                  <a href="/" class="bg-primary hover:bg-transparent border border-transparent hover:border-white text-white hover:text-white font-semibold px-4 py-2 rounded-full inline-block">Ver servicios</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
